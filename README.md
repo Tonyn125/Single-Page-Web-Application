@@ -5,7 +5,7 @@ Using :	HTML, CSS, JavaScript, Bootstrap, Mongo, GraphQL, Relay, React, Node
 
 Sample Images
 
-![Logo](sampleimages/Front.PNG)
+![Logo](sampleimages/Front.png)
 ![Logo](sampleimages/Login.PNG)
 ![Logo](sampleimages/Selector.PNG)
 ![Logo](sampleimages/Burger.PNG)
