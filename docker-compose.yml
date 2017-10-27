@@ -1,0 +1,24 @@
+version: "2"
+services:
+  web:
+    build: bothend
+    ports:
+      - "80:80"
+    links:
+     - mongo
+    environment:
+       PORT: 80
+       SENDGRID_API_KEY: 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
+  mongo:
+    image: mongo:latest
+#    ports:
+#     - "27017:27017"
+    volumes_from:
+      - db-data
+  db-data:
+    image: mongo:latest
+    volumes:
+      - /data/db
+      - /var/lib/mongodb
+      - /var/log/mongodb
+    entrypoint: /bin/true

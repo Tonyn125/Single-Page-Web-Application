@@ -1,0 +1,12 @@
+*.sqlite3
+?/
+.idea
+npm-debug.log
+.git
+.gitignore
+Dockerfile
+DockerfileDev
+docker-compose.yml
+docker-compose-dev.yml
+.travis.yml
+key

@@ -1,0 +1,16 @@
+sudo: required
+language: node
+services:
+- docker
+after_success:
+- "./deploy.sh"
+script:
+ - true
+before_install:
+- openssl aes-256-cbc -K $encrypted_0c35eebf403c_key -iv $encrypted_0c35eebf403c_iv
+  -in key.enc -out key -d
+- sudo chmod 400 key
+addons:
+  ssh_known_hosts:
+  - direct.sonderconnection.com
+  - 139.59.103.224

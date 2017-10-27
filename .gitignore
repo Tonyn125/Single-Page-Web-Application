@@ -1,0 +1,7 @@
+node_modules/
+build
+*.sqlite3
+/?/
+/.idea/
+npm-debug.log
+key
